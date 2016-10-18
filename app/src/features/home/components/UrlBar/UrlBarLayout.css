@@ -11,6 +11,11 @@
   box-shadow: rgba(0,0,0,.4) 0 0 8px;
   font-size: 16px;
   max-width: 480px;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  box-sizing: border-box;
 }
 
 .url-bar label {
