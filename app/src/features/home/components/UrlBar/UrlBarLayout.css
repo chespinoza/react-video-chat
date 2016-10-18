@@ -1,0 +1,40 @@
+.url-bar {
+  margin: 40px 0 45px 0;
+}
+.url-bar .url-bar-form {
+  padding: 5px 5px 5px .8em;
+  margin: 0 auto;
+  cursor: text;
+  background: #fff;
+  height: 50px;
+  border-radius: 3px;
+  box-shadow: rgba(0,0,0,.4) 0 0 8px;
+  font-size: 16px;
+  max-width: 480px;
+}
+
+.url-bar label {
+  color: #9b9b9b;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  line-height: 40px;
+}
+
+.url-bar .room-name-control {
+  border: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  max-width: 286px;
+  outline: none;
+}
+
+.url-bar .room-name-control::-webkit-input-placeholder {
+  color: magenta;
+  opacity: 0.5;
+}
+
+.url-bar .submit-button {
+  flex-shrink: 0;
+  padding: 6px 24px 6px 24px;
+}

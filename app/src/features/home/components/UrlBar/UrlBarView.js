@@ -5,11 +5,13 @@ import generateRandomWord from '../../../../helpers/generateRandomWord';
 export default class UrlBarView extends Component {
 
   componentWillMount() {
-    let placeholder = generateRandomWord();
-    this.startTypingEffect(placeholder);
+    let placeholder = generateRandomWord(8);
+    this.setState({
+      placeholder: placeholder
+    });
 
     this.roomNameTimer = setInterval(() => {
-      let placeholder = generateRandomWord();
+      let placeholder = generateRandomWord(8);
       this.startTypingEffect(placeholder);
     }, 4000);
   }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './UrlBarLayout.css';
 
 export default class UrlBarLayout extends Component {
   constructor() {
@@ -9,11 +10,13 @@ export default class UrlBarLayout extends Component {
   render() {
     let { placeholder } = this.props;
     return (
-      <form className="url-bar">
-        <label>wetalk.com/</label>
-        <input type="text" id="room-name" ref={(c) => this.roomNameInput = c} placeholder={placeholder}/>
-        <input type="submit" className="ui-button" value="Start" onClick={this.submit}/>
-      </form>
+      <div className="url-bar">
+        <form className="url-bar-form">
+          <label>wetalk.com/</label>
+          <input type="text" className="room-name-control" ref={(c) => this.roomNameInput = c} placeholder={placeholder}/>
+          <input type="submit" className="submit-button btn btn-primary" value="Start" onClick={this.submit}/>
+        </form>
+      </div>
     );
   }
 
