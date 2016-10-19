@@ -1,19 +1,20 @@
 .header.navbar {
   margin-bottom: 0;
-  background: none;
   border: none;
+  background: none;
 }
 
-.header .navbar-nav > li > a {
+.header.white .navbar-nav > li > a {
   color: white;
   text-shadow: rgba(0,0,0,.4) 0 1px 4px;
+  font-weight: bold;
 }
 
-.header .navbar-nav > li > a:hover {
+.header.white .navbar-nav > li > a:hover {
   color: white;
 }
 
-.header .navbar-brand {
+.header.white .navbar-brand {
   color: white;
   text-shadow: rgba(0,0,0,.4) 0 1px 4px;
 }

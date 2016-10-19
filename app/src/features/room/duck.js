@@ -12,8 +12,4 @@ export function createRoom(name) {
   };
 }
 
-// Reducers
-export default function reducer(state = {}, action) {
-  
-}
-
+export function 

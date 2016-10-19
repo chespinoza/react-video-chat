@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+
 import './Header.css';
 
 export default class Header extends Component {
-
   render() {
-    let headerClassName = 'header navbar navbar-default';
-    if (this.props.whiteNavbar === true) {
-      headerClassName += ' white';
-    }
     return (
-      <nav className={headerClassName}>
+      <nav className="header navbar navbar-default">
         <div className="container">
 
           <div className="navbar-header">
@@ -25,15 +20,13 @@ export default class Header extends Component {
 
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right">
-              <li><Link to="/about">About</Link></li>
+
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </div>
         </div>
       </nav>
     );
   }
-}
-
-Header.defaultsProps = {
-  whiteNavbar: false
 }

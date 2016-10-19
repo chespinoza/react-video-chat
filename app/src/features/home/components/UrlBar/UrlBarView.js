@@ -13,7 +13,7 @@ export default class UrlBarView extends Component {
     this.roomNameTimer = setInterval(() => {
       let placeholder = generateRandomWord(8);
       this.startTypingEffect(placeholder);
-    }, 4000);
+    }, 5000);
   }
 
   componentWillUnmount() {
@@ -36,7 +36,7 @@ export default class UrlBarView extends Component {
       this.setState({
         placeholder: subtext
       });
-    }, 150);
+    }, 100);
   }
 
   onSubmit(roomName) {

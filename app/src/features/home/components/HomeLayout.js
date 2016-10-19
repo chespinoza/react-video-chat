@@ -8,7 +8,7 @@ export default class HomeLayout extends Component {
     return (
       <div className="home">
         <div className="headline-section">
-          <Header/>
+          <Header whiteNavbar={true}/>
           <RoomCreatorView/>
         </div>
       </div>

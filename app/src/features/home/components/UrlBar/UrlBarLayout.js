@@ -20,9 +20,11 @@ export default class UrlBarLayout extends Component {
     );
   }
 
-  submit() {
+  submit(e) {
+    e.preventDefault();
     let roomName = this.roomNameInput.value || this.props.placeholder;
     this.props.onSubmit(roomName);
+    return false;
   }
 
 }
